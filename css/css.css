@@ -16,6 +16,7 @@ footer .credits {width: 100%; text-align: center; font-size: 14px; padding: 15px
 footer .drapeau-langues {height: 1em;}
 
 section p {width: 60%; text-align: center; margin: auto; font-size: 18px;}
+b {font-weight: bolder; color: #6665DD;}
 
 header {background: linear-gradient(to top left, #4357AD, #6665DD, #76C5F9); 
     height: 41em; 
@@ -57,6 +58,19 @@ header h1 {color: #FFF; font-family: 'Lato', sans-serif; font-size: 40px; font-w
 	box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
 }
 
+.btn-download-pageDL {
+	padding: 15px;
+	width: 240px;
+	font-family: 'Lato';
+	font-weight: bold;
+	font-size: 14px;
+	border-radius: 10px;
+	background-color: #fff;
+	color: black;
+	border:none;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+}
+
 .btn-learnmore {
 	padding: 15px;
 	width: 250px;
@@ -72,7 +86,7 @@ header h1 {color: #FFF; font-family: 'Lato', sans-serif; font-size: 40px; font-w
 	margin-top: 2vh;
 }
 
-.btn-jouer:hover, .btn-download:hover, .btn-learnmore:hover {background-color: #4357AD; color: white; transition: 0.2s; }
+.btn-jouer:hover, .btn-download:hover, .btn-learnmore:hover, .btn-download-pageDL:hover {background-color: #4357AD; color: white; transition: 0.2s; }
 
 section {
 	height: auto;
@@ -80,6 +94,9 @@ section {
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 	padding: 0px 20px 25px 25px;
 }
+
+section#pageDL a, a:active, a:visited {color: #4357AD; transition: 0.2s; text-decoration: none}
+section#pageDL a:hover {color: red;}
 
 .transparent {color: transparent;}
 
@@ -101,12 +118,35 @@ section#download {
 	color: #FFF !important;
 }
 
+section#config {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+table, th {
+	width: 60%;
+	background-color: #6665DD;
+	color: #FFF;
+	padding: 3px;
+	justify-content: center;
+	border-radius: 10px;
+}
+
+td {
+	background-color: #FFF;
+	color: #000;
+	padding: 10px;
+}
+
 #niveaux {display: flex; flex-direction: row; flex-wrap: auto; justify-content: space-evenly; align-items: center; margin-top: 30px;}
 section#introduction img {
 	width: 25%; height: 25%;
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
 	margin: 5px 0px;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 
 
@@ -147,6 +187,10 @@ iframe {width: 560px; height: 315px; margin: 15px auto; box-shadow: 0px 0px 25px
   section#introduction img {width: 70%;}
   section p {width: 80%;}
   iframe {width: 340px; height: 191px;}
+
+  table {
+  	width: 100%;
+  }
 
   .img-medias {width: 70%;}
 }
